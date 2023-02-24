@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/platformer.unity
+    guid: 3ad9cb2facb241541b61b18c3491cc7a
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: b0d0225271ba4094980b10569b8be3ac
+  - enabled: 1
+    path: Assets/Scenes/Snek.unity
+    guid: 47e2fa1fd61ff214fb5c635383585529
+  m_configObjects: {}
