@@ -1,4 +1,0 @@
-repository "MorphyBird@lightninbolt986@cloud"
-  path "/"
-    br "/main"
-    co "/main"
