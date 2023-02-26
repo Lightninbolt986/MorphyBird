@@ -16,8 +16,6 @@ public class makepipe : MonoBehaviour
 
     void Pipe()
     {
-        //TODO: APP helps find values for exact spawn
-        //H > 5
         float h = NextFloat(3f, 4);
         float x = NextFloat(-7.5f, 0.5f-h);
         
@@ -27,7 +25,7 @@ public class makepipe : MonoBehaviour
         bool special = NextFloat(0, 10) < 1;
         if (special)
         {
-            if (NextFloat(0, 1) > 0.5)
+            if (NextFloat(0, 1) < 0.5)
             {
                 Instantiate(platformerPipe, new Vector3(12, 0, 0), Quaternion.Euler(0, 0, 0));
             }

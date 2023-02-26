@@ -11,8 +11,8 @@ public class points : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tmp.text = StaticClass.points.ToString();
-        pointsCount = StaticClass.points;
+        tmp.text = PlayerPrefs.GetInt("score").ToString();
+        pointsCount = PlayerPrefs.GetInt("score");
     }
 
     // Update is called once per frame
@@ -20,17 +20,13 @@ public class points : MonoBehaviour
     {
         
     }
-    public static class StaticClass
-    {
-        public static int points { get; set; }
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8) 
         {
             pointsCount++;
             tmp.text = pointsCount.ToString();
-            StaticClass.points = pointsCount;
+            PlayerPrefs.SetInt("score", pointsCount);
         }
         if (collision.gameObject.layer == 9)
         {

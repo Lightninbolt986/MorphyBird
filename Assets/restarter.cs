@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadFlappy : MonoBehaviour
+public class restarter : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
-        PlayerPrefs.DeleteAll();
-    }
+        Invoke("Restart", 3);
 
+    }
+    void Restart()
+    {   
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("sampleScene");
+    }
     // Update is called once per frame
     void Update()
     {

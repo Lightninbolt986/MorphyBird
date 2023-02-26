@@ -20,6 +20,9 @@ public class moveLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.x < -16)
+        {
+            Destroy(transform.gameObject);
+        }
     }
 }
